@@ -1,0 +1,87 @@
+# Updated by fix_deps.py
+pnacl/Release/graphics_2d.o: graphics_2d.cc \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_image_data.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_bool.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_macros.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_instance.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_stdint.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_resource.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_size.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/graphics_2d.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/resource.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/instance_handle.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/pass_ref.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/size.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/logging.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/image_data.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/point.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_point.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/input_event.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_input_event.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_time.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_touch_point.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_var.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/touch_point.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/instance.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_console.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/view.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/rect.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_rect.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/module.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_module.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_core.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_completion_callback.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/core.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/completion_callback_factory.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/completion_callback.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_errors.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/output_traits.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/array_output.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_array_output.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/var.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/completion_callback_factory_thread_traits.h \
+  /Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/threading/lock.h
+graphics_2d.cc:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_image_data.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_bool.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_macros.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_instance.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_stdint.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_resource.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_size.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/graphics_2d.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/resource.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/instance_handle.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/pass_ref.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/size.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/logging.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/image_data.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/point.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_point.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/input_event.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_input_event.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_time.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_touch_point.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_var.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/touch_point.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/instance.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_console.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/view.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/rect.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_rect.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/module.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_module.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/ppb_core.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_completion_callback.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/core.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/completion_callback_factory.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/completion_callback.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_errors.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/output_traits.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/array_output.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/c/pp_array_output.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/cpp/var.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/completion_callback_factory_thread_traits.h:
+/Users/origins/Downloads/nacl_sdk/pepper_49/include/ppapi/utility/threading/lock.h:
