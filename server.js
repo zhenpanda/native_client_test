@@ -6,13 +6,13 @@ var methodOverride = require('method-override')
 
 var app = express();
 //Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(__dirname + '/public/twod'));
+app.use(express.static(__dirname + '/public'));
 
 // parse application/x-www-form-urlencoded 
 app.use(bodyParser.urlencoded({
-	extended: false
-}))
-// override with POST having ?_method=DELETE
+        extended: false
+    }))
+    // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'))
 var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({
@@ -26,36 +26,9 @@ var pg = require('pg');
 /*
 var dbUrl  = "pg://localhost/lonely_planet_db";
 */
-var conString = "postgres://localhost/testdb";
- 
-//this initializes a connection pool 
-//it will keep idle connections open for a (configurable) 30 seconds 
-//and set a limit of 10 (also configurable) 
-pg.connect(conString, function(err, client, done) {
-  if(err) {
-    return console.error('error fetching client from pool', err);
-  }
-/*  
-  client.query('SELECT $1::int AS number', ['1'], function(err, result) {
-    //call `done()` to release the client back to the pool 
-    done();
-    if(err) {
-      return console.error('error running query', err);
-    }
-    console.log(result.rows[0].number);
-    //output: 1 
-*/
-  client.query('SELECT table_schema,table_name FROM information_schema.tables ORDER BY table_schema,table_name', function(err, result) {
-    done();
-    if(err) {
-      return console.error('error running query', err);
-    }
-    console.log(result.rows);
-  });
-});
+var conString = "postgres://localhost/iptv";
 
 // var routes = require('./controllers/burgers_controller.js');
-
 // app.use('/', routes);
 // app.use('/update', routes);
 // app.use('/create', routes);
@@ -65,10 +38,53 @@ app.listen(port);
 
 // Home route
 app.get('/', function(req, res) {
-	res.render('index');
+    res.render('test');
 });
 
-// Test route
-app.get('/twod', function(req, res) {
-	res.render('twod');
+// 2d route
+// app.get('/twod', function(req, res) {
+// 	res.render('twod');
+// });
+
+// login route
+app.post('/login', function(req, res) {
+	console.log(req.body);
+	/*    
+	pg.connect(conString, function(err, client, done, cb) {
+        if (err) {
+            return console.error('error fetching client from pool', err);
+        }
+        var nq = '';
+        client.query(nq, function(err, result) {
+            if (err) {
+                return console.error('error running query', err);
+            }
+            //console.log(result.rows);
+            cb = result.rows;
+		    console.log(cb);
+		    res.json(cb);
+        });
+        done();
+    });*/
+	res.json({a:"gotsomething"});
+});
+
+// fetch route
+app.post('/fetch', function(req, res) {
+    pg.connect(conString, function(err, client, done, cb) {
+        if (err) {
+            return console.error('error fetching client from pool', err);
+        }
+        var nq = 'SELECT * FROM client_package INNER JOIN channel_package ON (client_package.package_id = channel_package.package_id) INNER JOIN channel ON (channel.id = channel_package.channel_id) WHERE client_id = 2';
+        client.query(nq, function(err, result) {
+            if (err) {
+                return console.error('error running query', err);
+            }
+            //console.log(result.rows);
+            cb = result.rows;
+		    console.log(cb);
+		    res.json(cb);
+        });
+        done();
+    });
 });
